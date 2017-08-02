@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR" ng-app="app">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=0">
+
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/ico">
+
+    <title>Angular Starter</title>
+    <!-- styles -->
+    <!-- build:css assets/css/min.css -->
+    <link rel="stylesheet" href="assets/css/yggdrasil.css">
+    <!-- endbuild -->
+</head>
+
+<body layout="column">
+    <main layout="column" flex ui-view></main>
+    <menu></menu>
+    <!--scripts -->
+    <!-- build:js lib.js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/angular-material/angular-material.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.js"></script>
+    <script src="bower_components/angular-messages/angular-messages.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+	<script src="bower_components/angular-filter/dist/angular-filter.js"></script>
+    <!-- endbuild -->
+    
+    <!-- build:js applib.js -->
+    <script src="app/app.module.js"></script>    
+
+    <script src="app/core/core.module.js"></script>
+    <script src="app/core/core.run.js"></script>
+    <script src="app/core/config.route.js"></script>
+
+	<script src="app/login/login.module.js"></script>
+	<script src="app/login/config.route.js"></script>
+	<script src="app/login/login.js"></script>
+    <!-- endbuild -->
+
+</body>
+
+</html>
